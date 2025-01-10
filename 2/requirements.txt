@@ -1,0 +1,11 @@
+# PYTHON
+pip==24.3.1
+
+# DATAVIZ
+
+# EDA
+
+# FRAMEWORKS
+streamlit
+
+# ML

@@ -13,7 +13,7 @@ services:
       -  
     volumes:
       # Crée un volume qui synchronise les fichiers entre votre machine et le conteneur
-      - "./:/app"
+      - 
 
   # SERVICE DB POSTGRES
   postgres:

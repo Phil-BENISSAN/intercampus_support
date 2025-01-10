@@ -1,0 +1,43 @@
+version: "3.9"
+
+services:
+
+  # SERVICE STREAMLIT
+  streamlit:
+    # Build & context indique que l'image doit être construite à partir d'un Dockerfile
+    build:
+      context: .
+    container_name: 
+    ports:
+      # Signifie que le port de l'hôte est redirigé vers le port  du conteneur.
+      -  
+    volumes:
+      # Crée un volume qui synchronise les fichiers entre votre machine et le conteneur
+      - "./:/app"
+
+  # SERVICE DB POSTGRES
+  postgres:
+    # Utilise l'image officielle PostgreSQL depuis Docker Hub
+    image: 
+    # Configure le conteneur pour qu'il redémarre automatiquement en cas d'erreur ou après un redémarrage du système
+    restart: 
+    container_name: 
+    # Indique que les variables d'environnement seront chargées depuis un fichier situé dans le même répertoire.
+    env_file:
+      - 
+    environment:
+    #  Nom de la base de données à créer, nom d'utilisateur pour la connexion, mot de passe de l'utilisateur, méthode d'authentification
+      POSTGRES_DB: 
+      POSTGRES_USER: 
+      POSTGRES_PASSWORD: 
+      POSTGRES_HOST_AUTH_METHOD: 
+    
+    ports:
+      # Signifie que le port de l'hôte est redirigé vers le port  du conteneur.
+      - 
+    volumes:
+      # Configure un volume nommé pour persister les données. Attention ce volume doit être défini dans une section volumes
+      - 
+
+volumes:
+  
